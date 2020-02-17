@@ -1,0 +1,47 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+@import "fonts";
+@import "mixins";
+@import "variables";
+
+
+body {
+    font-family: $body-font, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+    
+    #app{
+        min-height: 100vh;
+    }
+
+    h1,
+    h2,
+    h3 {
+        font-family: $heading-font;
+    }
+
+    section {
+        padding: 40px 0;
+        
+        &.intro{
+            .intro-content{
+                text-align: center;
+                img{
+                    max-width: 40px;
+                    display: inline-block;
+                    margin: 0 0 10px 0;
+                }
+                h1{
+                    font-size: 2rem;
+                    display: inline-block;
+                    margin: 10px 20px;
+                }
+            }
+            
+            
+        }
+        
+    }
+
+
+}
